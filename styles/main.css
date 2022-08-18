@@ -1,0 +1,100 @@
+
+    .login-container text-align: center;
+
+    .login-container img {
+        width: 20px;
+        margin-top: 170px;
+    }
+    .login-container h1 {
+        color: #de2728;
+        margin-top: 15px;
+        font-size: 2.1rem;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+        font-family: SapientBold;
+        padding-right: 3px;
+        .tracker {
+            text-transform: capitalize;
+            font-family: SapientLight;
+        }
+    }
+    //default state of login error message
+    .login-container  p {
+        display: none;
+        color: $error-color;
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        span{
+            font-family: "FontAwesome";
+            margin-right: 10px;
+        }
+    }
+    // displaying the error message on invalid credential
+    .login-container .login-error {
+        display: block;
+    }
+    // wrapper to wrap each input field( because a UL id added in this wrapper dynamically )
+    .login-container .wrapper {
+        height: 70px; 
+        .parsley-errors-list,
+        .filled {
+            color: $error-color;
+            display: block;
+        }
+        
+    }
+    .login-container .wrapper input {
+        width: $loginWidth;
+        font-size: 1.3rem;
+        height: $field-height;
+        border: 1px solid #fff;
+        border-radius: $field-border-radius;
+        text-indent: 40px;
+        color: #696969;
+        box-shadow: 0 0 3px 3px rgb(233, 233, 233);
+        &:focus {
+            box-shadow: 0 0 2px $focusColor;
+        }
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px $autofill inset;
+        }
+        ::-webkit-input-placeholder {
+            color: #b3b3b3;
+            text-transform: capitalize;
+        }
+        :-moz-placeholder {
+            color: #d3d3d3;
+            text-transform: capitalize;
+        }
+        ::-moz-placeholder {
+            color: #d3d3d3;
+            text-transform: capitalize;
+        }
+        :-ms-input-placeholder {
+            color: #d3d3d3;
+            text-transform: capitalize;
+        }
+    }
+    .login-container input[type=submit] {
+        height: $field-height;
+        width: $loginWidth;
+        font-family: "SapientBold";
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+    .login-container .user-id {
+        background: url("../images/username.png") no-repeat;
+        background-position: 20px 14px;
+        background-color: white;
+    }
+    .login-container .user-password {
+        background: url("../images/password.png") no-repeat;
+        background-position: 20px 13px;
+        background-color: white;
+    }
+    
+
+
+.login-container ~ #footer{
+    display: none;
+}

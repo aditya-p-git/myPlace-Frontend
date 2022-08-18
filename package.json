@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Package.json for frontend of myPlace App",
+  "main": "myPlace.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.html"
+  },
+  "author": "Aditya",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-contrib-coffee": "^2.1.0",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "backbone": "^1.4.1",
+    "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0",
+    "jst": "^0.0.13",
+    "parsleyjs": "^2.9.2",
+    "underscore": "^1.13.4"
+  }
+}
