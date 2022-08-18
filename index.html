@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>myPlace</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main id="mainContainer" class="login-container">
+       
+        
+    </main>
+    
+    <footer id="footer"> </footer>
+    <script src="scripts/vendorScripts/underscore.js"></script>  
+    <script src="scripts/vendorScripts/jquery.js"></script>
+    <script src="scripts/vendorScripts/jst.js"></script>
+    <script src="scripts/vendorScripts/backbone.js"></script>
+    <script src="node_modules/parsleyjs/dist/parsley.js"></script>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/common/constant.js"></script>
+    <script src="scripts/common/messageBus.js"></script>
+    <script src="scripts/common/config.js"></script>
+    <script src="scripts/global.js"></script>
+
+    <script type="text/template" id="Landing_Page">
+        <div>
+            <h1>How can we serve you?</h1>
+            <div>
+                <span>
+                    <p>Register New User</p>
+                </span>
+
+                <span>
+                    <span><p>Login</p></span>
+                </span>
+            </div>
+            <div>
+                <p> Guest User Login </p>
+
+            </div>
+
+        </div>
+    </script>
+    
+    <script type="text/template" id="tpl_New_Blog_Post">
+        <div>
+            <h1>New Blog Post</h1>
+            <div>
+                <div>
+                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                </div>
+
+                <span>
+                    <span><p>Post</p></span>
+                </span>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" id="tpl_Personal_Blog_VIew">
+        <div>
+            <h1>Blog View : Personal</h1>
+            <div>
+                <span>
+                    <span><p>Edit</p></span>
+                    <span><p>Created at</p></span>
+                </span>
+                <div>
+                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+    </script>
+    
+    <script type="text/template" id="tpl_General_Blog_VIew">
+        <div>
+            <h1>Blog View : Home</h1>
+            <div>
+                <span>
+                    <span><p>Creater</p><p>Aditya</p></span>
+                    <span><p>Created at</p><p>18 August 2022</p></span>
+                    <span><p>Like</p><p>Image</p></span>
+                </span>
+                <div>
+                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+    </script> 
+
+    <script type="text/template" id="tpl_Register"> 
+        <div>
+            <p>Register User</p>
+            <div>
+                <form action="#" method="GET" id="registerForm" autocomplete="off" data-parsley-validate >
+            
+                    <!-- Username -->
+                    <div class="wrapper">
+                        <label for="userId"  class="for-screen-reader-only">Username:</label>
+                        <input type='text' id="userName" name="userId" class="user-id" autocomplete="off" placeholder='Enter User Name' data-parsley-required data-parsley-trigger="change" data-parsley-required-message="<%= sapient_Id %>"/>
+                    </div>
+
+                    <!-- Username -->
+                    <div class="wrapper">
+                        <label for="userId"  class="for-screen-reader-only">Email:</label>
+                        <input type='text' id="userEmail" name="userId" class="user-id" autocomplete="off" placeholder='Enter User Email' data-parsley-required data-parsley-trigger="change" data-parsley-required-message="<%= sapient_Id %>"/>
+                    </div>
+        
+                    <!-- Password -->
+                    <div class="wrapper">
+                        <label for="password" class="for-screen-reader-only">Password:</label>
+                        <input type='password' id="userPassword" name="password" class="user-password" autocomplete="off" placeholder='Enter Password' data-parsley-required data-parsley-trigger="change" data-parsley-required-message="<%= password %>"/>
+                    </div>
+        
+                    <!-- server side error message -->
+                    <p><span>&#xf057;</span>The ID or Password you entered don't match</p>
+        
+                    <!-- submit button -->
+                    <input id="loginSubmitBtn" type='submit' class="primary-btn" value="Register User" />
+                </form>
+            </div>
+        </div>
+    </script>
+    <script type="text/template" id="tpl_login">
+
+        <h1>my <span class="tracker">Place</span></h1>
+        <form action="#" method="GET" id="loginForm" autocomplete="off" data-parsley-validate >
+            
+            <!-- Username -->
+            <div class="wrapper">
+                <label for="userId"  class="for-screen-reader-only">username:</label>
+                <input type='text' id="userId" name="userId" class="user-id" autocomplete="off" placeholder='sapient NT ID' data-parsley-required data-parsley-trigger="change" data-parsley-required-message="<%= sapient_Id %>"/>
+            </div>
+
+            <!-- Password -->
+            <div class="wrapper">
+                <label for="password" class="for-screen-reader-only">password:</label>
+                <input type='password' id="userPassword" name="password" class="user-password" autocomplete="off" placeholder='password' data-parsley-required data-parsley-trigger="change" data-parsley-required-message="<%= password %>"/>
+            </div>
+
+            <!-- server side error message -->
+            <p><span>&#xf057;</span>The ID or Password you entered don't match</p>
+
+            <!-- submit button -->
+            <input id="loginSubmitBtn" type='submit' class="primary-btn" value="log in" />
+        </form>
+    </script>
+    
+    <script src="scripts/views/loginView.js"></script>
+    <script src="scripts/router.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+
