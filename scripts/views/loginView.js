@@ -6,7 +6,7 @@ MyPlace.Views = MyPlace.Views || {};
     MyPlace.Views.Login = Backbone.View.extend({
         //template: JST['MyPlace.Config.templates.loginTpl'],
         //template: _.template($('#tpl_login').html()),
-        template: _.template($('tpl_login').html()),
+        template: _.template($('#tpl_login').html()),
 
        tagName: 'div',
 
