@@ -1,0 +1,218 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>myPlace</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
+</head>
+
+<body>
+    <header id="header" class="header">
+        <p class="title_head">myPlace</h1>
+    </header>
+
+    <main id="mainContainer" class="main_container">
+       
+        
+    </main>
+    
+    <footer id="footer"> </footer>
+    <script src="scripts/vendorScripts/underscore.js"></script>  
+    <script src="scripts/vendorScripts/jquery.js"></script>
+    <script src="scripts/vendorScripts/jst.js"></script>
+    <script src="scripts/vendorScripts/backbone.js"></script>
+    <script src="node_modules/parsleyjs/dist/parsley.js"></script>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/common/constant.js"></script>
+    <script src="scripts/common/messageBus.js"></script>
+    <script src="scripts/common/config.js"></script>
+    <script src="scripts/global.js"></script>
+
+    <script type="text/template" id="Landing_Page">
+        <div id ="landingPage" class="centre_div">
+            <div class="page_container">
+                <p class="page_head">How can we serve you?</p>
+                <div>
+                    <span>
+                        <p id="landingReg" class="primary_btn">Register New User</p>
+                    </span>
+
+                    <span>
+                        <span><p id="landingLogin" class="primary_btn">Login</p></span>
+                    </span>
+                </div>
+                <div>
+                    <p id="landingGuest" class="primary_btn"> Guest User Login </p>
+
+                </div>
+            </div>
+        </div>
+    </script>
+    
+    <script type="text/template" id="tpl_New_Blog_Post">
+        <div>
+            <h1>New Blog Post</h1>
+            <div>
+                <div>
+                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                </div>
+
+                <span>
+                    <span><p>Post</p></span>
+                </span>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" id="tpl_Personal_Blog_VIew">
+        <div id="PersonalBlogView" class="centre_div">
+            <div class="page_container">
+                <p class="page_head">Personal Blog View</p>
+                <p class="new_post">New Post</p>
+                <div class="float_clear">
+                    <div class="blog_info">
+                        <span><p class="primary_btn">Edit</p></span>
+                        <span><p>Created at - 19 Aug 2022</p></span>
+                    </div>
+                    <div class="blog_text">
+                        <p>Blog Title: Dummy text</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                             with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="float_clear">
+                    <div class="blog_info">
+                        <span><p class="primary_btn">Edit</p></span>
+                        <span><p>Created at - 19 Aug 2022</p></span>
+                    </div>
+                    <div class="blog_text">
+                        <p>Blog Title: Dummy text</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere massa a tristique lacinia. 
+                            Maecenas a accumsan diam. Praesent id ex ac mauris porta tempor eu a sapien. Nulla aliquam vulputate urna, 
+                            lobortis convallis libero placerat at. In gravida neque ac lectus placerat viverra eu ut orci. 
+                            Morbi volutpat pharetra fringilla. Praesent ornare rutrum orci, feugiat pellentesque felis ullamcorper 
+                            egestas. Nullam ornare consequat quam non feugiat. Integer molestie odio neque, scelerisque feugiat nisi 
+                            euismod id. Curabitur molestie suscipit arcu, non congue ex mollis in. Vestibulum convallis arcu eget 
+                            turpis dictum eleifend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    
+    <script type="text/template" id="tpl_General_Blog_VIew">
+        <div id="GeneralBlogView" class="centre_div">
+            <div class="page_container">
+                <p class="page_head">General / Guest Blog View</p>
+                <div class="float_clear">
+                    <div class="blog_info">
+                        <span><p>Created by - Arjun</p></span>
+                        <span><p>Created at - 19 Aug 2022</p></span>
+                    </div>
+                    <div class="blog_text">
+                        <div>
+                            <p>Blog Title: Story of dummy text</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                             with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="float_clear">
+                    <div class="blog_info">
+                        <span><p>Created by - Ananya</p></span>
+                        <span><p>Created at - 19 Aug 2022</p></span>
+                    </div>
+                    <div class="blog_text">
+                        <p>Blog Title: Dummy text</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                             with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script> 
+
+    <script type="text/template" id="tpl_Register" class="tpl_Register"> 
+        <div class="centre_div">
+            <div class="page_container">
+                <p class="page_head">New User Registration</p>
+                <div >
+                    <form action="#" method="GET" id="registerForm" autocomplete="off" data-parsley-validate >
+                        <!-- Username -->
+                        <div class="wrapper">
+                            <label for="userId"  class="sub_head">Username:</label>
+                            <input type='text' id="userName" name="userId" class="in_box" autocomplete="off" placeholder='Enter User Name' data-parsley-required data-parsley-trigger="change"/>
+                        </div>
+
+                        <!-- Username -->
+                        <div class="wrapper">
+                            <label for="userId"  class="sub_head">Email:</label>
+                            <input type='email' id="userEmail" name="userId" class="in_box" autocomplete="off" placeholder='Enter User Email'/>
+                        </div>
+            
+                        <!-- Password -->
+                        <div class="wrapper">
+                            <label for="password" class="sub_head">Password:</label>
+                            <input type='password' id="userPassword" name="password" class="in_box" autocomplete="off" placeholder='Enter Password'/>
+                        </div>
+            
+                        <!-- server side error message 
+                        <p><span>&#xf057;</span>The ID or Password you entered don't match</p>-->
+            
+                        <!-- submit button -->
+                        <input id="loginSubmitBtn" type='submit' class="primary_btn" value="Register User" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/template" id="tpl_login">
+        <div class="centre_div">
+            <div class="page_container">
+                <p class="page_head">One step away..</p>
+                <form action="#" method="GET" id="loginForm" autocomplete="off" data-parsley-validate >
+                    
+                    <!-- Username -->
+                    <div class="wrapper">
+                        <label for="userId"  class="sub_head">Username:</label>
+                        <input type='text' id="userId" name="userId" class="in_box" autocomplete="off" placeholder='Enter email ID' data-parsley-required data-parsley-trigger="change" />
+                    </div>
+
+                    <!-- Password -->
+                    <div class="wrapper">
+                        <label for="password" class="sub_head">Password:</label>
+                        <input type='password' id="userPassword" name="password" class="in_box" autocomplete="off" placeholder='Enter Password' data-parsley-required data-parsley-trigger="change"/>
+                    </div>
+
+                    <!-- server side error message -->
+                    <!--<p><span>&#xf057;</span>The ID or Password you entered don't match</p>-->
+
+                    <!-- submit button -->
+                    <input id="loginSubmitBtn" type='submit' class="primary_btn" value="log in" />
+                </form>
+            </div>
+        </div>
+    </script>
+
+    <script src="scripts/views/loginView.js"></script>
+    <script src="scripts/views/landingView.js"></script>
+    <script src="scripts/views/registerUserView.js"></script>
+    <script src="scripts/views/personalBlogView.js"></script>
+    <script src="scripts/views/guestBlogView.js"></script> 
+    <script src="scripts/router.js"></script>
+
+</body>
+
