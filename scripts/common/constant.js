@@ -1,9 +1,3 @@
-/*!
- * constant.js
- * @project   PEOPLE TRACKER
- * @date      2015-10-27 
- * @author    GOVIND MAHESHWARI, SapientNitro <gmaheshwari2@sapient.com>
- */
 
 'use strict';
 // Creating constant Component
